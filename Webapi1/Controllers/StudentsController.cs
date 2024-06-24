@@ -32,9 +32,14 @@ namespace Webapi1.Controllers
             {
                 return NotFound();
             }
-
+            //自訂 [詳細資料] 頁面
             var student = await _context.Students
+                .Include(s => s.Enrollments)
+                .ThenInclude(e => e.Course)
+                .AsNoTracking()
                 .FirstOrDefaultAsync(m => m.ID == id);
+            //var student = await _context.Students
+            //    .FirstOrDefaultAsync(m => m.ID == id);
             if (student == null)
             {
                 return NotFound();
