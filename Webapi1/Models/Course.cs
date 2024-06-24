@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Webapi1.Models
+namespace ContosoUniversity.Models
 {
     public class Course
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Webapi1.Models
+namespace ContosoUniversity.Models
 {
     public class Student
     {

@@ -1,4 +1,4 @@
-﻿namespace Webapi1.Models
+﻿namespace ContosoUniversity.Models
 {
     public enum Grade
     {
